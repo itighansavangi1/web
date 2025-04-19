@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+background-color: lightblue;
+margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  background-position: left;
+  background-image:url("gnewlogo.jpg");
+  background-repeat: no-repeat;
+  padding: 4px 30px;
+  text-align: center;
+  text-shadow: 2px 2px lightblue;
+  font-family: "Times New Roman" Times, Serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #20B2AA;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  
+}
+
+table, th, td { 
+border: 1px solid black;
+padding: 10px;
+text-align:left;
+ }
+/* Middle column */
+.column.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+img.two {
+  height:200px;
+  width:300px;
+  border: 10px solid #00FFFF;
+  padding: 5px;
+}
+div.one {
+   border-style:solid;
+   border-width: 5px;
+   border-color:blue;
+   padding: 25px 50px 75px 100px;
+}
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+.center {
+  text-align: center;
+  color: red;
+}
